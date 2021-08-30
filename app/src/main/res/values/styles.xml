@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Opening Theme -->
-    <style name="Base.V19.OpeningTheme" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+    <style name="Base.V19.OpeningTheme" parent="Theme.MaterialComponents.Light.NoActionBar"/>
     <style name="Base.OpeningTheme" parent="Base.V19.OpeningTheme"/>
     <style name="OpeningTheme" parent="Base.OpeningTheme">
         <item name="colorPrimary">@android:color/transparent</item>
@@ -12,7 +12,7 @@
     </style>
 
     <!-- Base Theme -->
-    <style name="Base.V19" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <style name="Base.V19" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="actionColor">@color/white</item>
         <item name="floatingActionButtonStyle">@style/FloatingActionButtonTheme</item>
         <item name="toolbarSearchColor">@color/white</item>
@@ -86,7 +86,7 @@
     <style name="BlackTheme" parent="Base.BlackTheme"/>
 
     <!-- Dialogs -->
-    <style name="LightDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+    <style name="LightDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="colorPrimary">@color/light_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
         <item name="colorAccent">@color/light_youtube_accent_color</item>
@@ -94,7 +94,7 @@
         <item name="windowBackground">@color/light_dialog_background_color</item>
     </style>
 
-    <style name="DarkDialogTheme" parent="Theme.AppCompat.DayNight.Dialog">
+    <style name="DarkDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
         <item name="colorPrimary">@color/dark_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
         <item name="colorAccent">@color/dark_youtube_accent_color</item>
@@ -102,7 +102,7 @@
         <item name="windowBackground">@color/dark_dialog_background_color</item>
     </style>
 
-    <style name="LightDialogMinWidthTheme" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    <style name="LightDialogMinWidthTheme" parent="Theme.MaterialComponents.Light.Dialog.MinWidth">
         <item name="colorPrimary">@color/light_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/light_youtube_primary_color</item>
         <item name="colorAccent">@color/light_youtube_accent_color</item>
@@ -110,7 +110,7 @@
         <item name="windowBackground">@color/light_dialog_background_color</item>
     </style>
 
-    <style name="DarkDialogMinWidthTheme" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
+    <style name="DarkDialogMinWidthTheme" parent="Theme.MaterialComponents.Light.Dialog.MinWidth">
         <item name="colorPrimary">@color/dark_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/dark_youtube_primary_color</item>
         <item name="colorAccent">@color/dark_youtube_accent_color</item>

@@ -25,6 +25,11 @@
         android:theme="@style/OpeningTheme"
         android:resizeableActivity="true"
         tools:ignore="AllowBackup">
+
+        <meta-data
+            android:name="com.pointzi.APP_KEY"
+            android:value="PZDynamic_bison"/>
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

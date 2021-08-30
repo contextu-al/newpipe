@@ -20,6 +20,7 @@
 
 package org.schabi.newpipe;
 
+import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -54,6 +55,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.preference.PreferenceManager;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.pointzi.Pointzi;
+import com.pointzi.debug.LogLevel;
 
 import org.schabi.newpipe.databinding.ActivityMainBinding;
 import org.schabi.newpipe.databinding.DrawerHeaderBinding;
@@ -87,7 +90,9 @@ import org.schabi.newpipe.util.TLSSocketFactoryCompat;
 import org.schabi.newpipe.util.ThemeHelper;
 import org.schabi.newpipe.views.FocusOverlayView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -130,10 +135,22 @@ public class MainActivity extends AppCompatActivity {
                     + "savedInstanceState = [" + savedInstanceState + "]");
         }
 
+
+        Pointzi.setLogLevel(LogLevel.DEBUG);
+
+        final String pattern = "dd-MMM-yyyy hh:mm:ss";
+        @SuppressLint("SimpleDateFormat") final SimpleDateFormat simpleDateFormat =
+                new SimpleDateFormat(pattern);
+        final String date = simpleDateFormat.format(new Date());
+
+
+        Pointzi.setUserId("pz-dev-test-bison " + date);
+
         // enable TLS1.1/1.2 for kitkat devices, to fix download and play for media.ccc.de sources
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             TLSSocketFactoryCompat.setAsDefault();
         }
+
 
         ThemeHelper.setDayNightMode(this);
         ThemeHelper.setTheme(this, ServiceHelper.getSelectedServiceId(this));

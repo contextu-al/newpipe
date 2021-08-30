@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Follows service's primary color -->
-    <style name="ServiceColoredButton" parent="Widget.AppCompat.Button.Colored">
+    <style name="ServiceColoredButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="colorButtonNormal">?attr/colorPrimary</item>
         <item name="android:textColor">@color/subscribe_text_color</item>
         <item name="colorControlHighlight">@color/dark_ripple_color</item>
@@ -38,13 +38,13 @@
         <item name="alertDialogTheme">@style/FilePickerAlertDialogThemeDark</item>
     </style>
 
-    <style name="FilePickerAlertDialogThemeLight" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+    <style name="FilePickerAlertDialogThemeLight" parent="Theme.MaterialComponents.Light.Dialog.Alert">
         <item name="colorPrimary">@color/light_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/light_youtube_dark_color</item>
         <item name="colorAccent">@color/light_settings_accent_color</item>
     </style>
 
-    <style name="FilePickerAlertDialogThemeDark" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+    <style name="FilePickerAlertDialogThemeDark" parent="Theme.MaterialComponents.Light.Dialog.Alert">
         <item name="colorPrimary">@color/dark_youtube_primary_color</item>
         <item name="colorPrimaryDark">@color/dark_youtube_dark_color</item>
         <item name="colorAccent">@color/dark_settings_accent_color</item>
@@ -55,14 +55,14 @@
         <item name="android:textAppearanceSmall">@style/PlayQueueItemSubtitle</item>
     </style>
 
-    <style name="PlayQueueItemTitle" parent="TextAppearance.AppCompat.Large">
+    <style name="PlayQueueItemTitle" parent="TextAppearance.MaterialComponents.Headline2">
         <item name="android:textColor">@color/white</item>
     </style>
-    <style name="PlayQueueItemSubtitle" parent="TextAppearance.AppCompat.Small">
+    <style name="PlayQueueItemSubtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:textColor">@color/white_secondary</item>
     </style>
 
-    <style name="FloatingActionButtonTheme" parent="Widget.Design.FloatingActionButton">
+    <style name="FloatingActionButtonTheme" parent="Widget.MaterialComponents.FloatingActionButton">
         <item name="tint">?attr/actionColor</item>
     </style>
 

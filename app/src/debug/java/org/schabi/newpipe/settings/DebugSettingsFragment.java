@@ -6,7 +6,6 @@ import androidx.preference.Preference;
 
 import org.schabi.newpipe.R;
 
-import leakcanary.LeakCanary;
 
 public class DebugSettingsFragment extends BasePreferenceFragment {
     @Override
@@ -20,11 +19,6 @@ public class DebugSettingsFragment extends BasePreferenceFragment {
 
         assert showMemoryLeaksPreference != null;
         assert crashTheAppPreference != null;
-
-        showMemoryLeaksPreference.setOnPreferenceClickListener(preference -> {
-            startActivity(LeakCanary.INSTANCE.newLeakDisplayActivityIntent());
-            return true;
-        });
 
         crashTheAppPreference.setOnPreferenceClickListener(preference -> {
             throw new RuntimeException();

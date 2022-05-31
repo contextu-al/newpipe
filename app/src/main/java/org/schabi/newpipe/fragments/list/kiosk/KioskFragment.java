@@ -6,10 +6,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
+
+
 
 import org.schabi.newpipe.R;
 import org.schabi.newpipe.error.ErrorInfo;
@@ -114,8 +117,19 @@ public class KioskFragment extends BaseListInfoFragment<KioskInfo> {
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              @Nullable final ViewGroup container,
                              @Nullable final Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_kiosk, container, false);
+       final View view = inflater.inflate(R.layout.fragment_kiosk, container, false);
+
+        final Button button = view.findViewById(R.id.btn_refresh);
+        button.setOnClickListener(v -> {
+            reloadContent();
+
+        });
+
+        return  view;
     }
+
+
+
 
     @Override
     public void onResume() {
@@ -162,7 +176,6 @@ public class KioskFragment extends BaseListInfoFragment<KioskInfo> {
     @Override
     public void handleResult(@NonNull final KioskInfo result) {
         super.handleResult(result);
-
         name = kioskTranslatedName;
         setTitle(kioskTranslatedName);
     }

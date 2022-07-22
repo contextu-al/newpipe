@@ -10,6 +10,8 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.pointzi.Pointzi;
+
 import org.schabi.newpipe.database.stream.model.StreamStateEntity;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.channel.ChannelInfoItem;
@@ -133,11 +135,12 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     + "showFooter = " + showFooter);
         }
         notifyItemRangeInserted(offsetStart, data.size());
+        Pointzi.resetUi();
 
         if (footer != null && showFooter) {
             final int footerNow = sizeConsideringHeaderOffset();
             notifyItemMoved(offsetStart, footerNow);
-
+            Pointzi.resetUi();
             if (DEBUG) {
                 Log.d(TAG, "addInfoItemList() footer from " + offsetStart
                         + " to " + footerNow);
@@ -250,7 +253,8 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     @Override
-    public int getItemViewType(int position) {
+    public int getItemViewType(final int pos) {
+        int  position = pos;
         if (DEBUG) {
             Log.d(TAG, "getItemViewType() called with: position = [" + position + "]");
         }
@@ -258,7 +262,7 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         if (header != null && position == 0) {
             return HEADER_TYPE;
         } else if (header != null) {
-            position--;
+           position--;
         }
         if (footer != null && position == infoItemList.size() && showFooter) {
             return FOOTER_TYPE;
@@ -322,7 +326,8 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final RecyclerView.ViewHolder holder, final int pos) {
+       int position = pos;
         if (DEBUG) {
             Log.d(TAG, "onBindViewHolder() called with: "
                     + "holder = [" + holder.getClass().getSimpleName() + "], "

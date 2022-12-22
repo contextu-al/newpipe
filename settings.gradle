@@ -9,3 +9,15 @@ include ':app'
 //        substitute module('com.github.TeamNewPipe:NewPipeExtractor') with project(':extractor')
 //    }
 //}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://clojars.org/repo" }
+        maven { url "https://repo.pointzi.com/sdk/pointzi/" }
+    }
+}

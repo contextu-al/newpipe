@@ -15,14 +15,3 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        jcenter()
-        maven { url "https://jitpack.io" }
-        maven { url "https://clojars.org/repo" }
-        maven { url "https://repo.pointzi.com/sdk/pointzi/" }
-    }
-}

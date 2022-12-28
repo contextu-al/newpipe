@@ -42,4 +42,4 @@ echo "===== Build NewPipe .apk for AppCenter ====="
 ./gradlew assembleDebug
 
 echo "===== Uploading .apk to AppCenter ====="
-appcenter distribute release --app Contextual/NewPipe-"$SDK_ENV"SDK-"$APP_ENV"-"$APP_KEY" --file "app/build/outputs/apk/devBison/debug/app-devBison-debug.apk" --group "Collaborators"
+appcenter distribute release --app Contextual/NewPipe-"$SDK_ENV"SDK-"$APP_ENV"-"$APP_KEY" --file "app/build/outputs/apk/debug/app-debug.apk" --group "Collaborators"

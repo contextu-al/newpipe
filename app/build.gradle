@@ -269,7 +269,7 @@ dependencies {
     // RxJava binding APIs for Android UI widgets
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
 
-    implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
+    implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
 
     // Date and time formatting
     implementation "org.ocpsoft.prettytime:prettytime:5.0.1.Final"

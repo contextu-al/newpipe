@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         final String date = simpleDateFormat.format(new Date());
 
 
-        Pointzi.setUserId("pz-dev-test-bison " + date);
+        Pointzi.setUserId("pz-prod-user " + date);
 
         // enable TLS1.1/1.2 for kitkat devices, to fix download and play for media.ccc.de sources
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {

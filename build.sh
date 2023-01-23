@@ -31,7 +31,7 @@ if [ "$GIT_BRANCH" = "staging" ]; then
 elif [ "$GIT_BRANCH" = "main" ]; then
   SDK_ENV='Prod'
   # Update the build.gradle to point to the prod version of the SDK
-  sed -i '' 's:com.pointzi.dev\::com.pointzi\::1' app/build.gradle
+  sed -i 's/com.pointzi.dev/com.pointzi/' gradle/build.gradle
 fi
 
 # We use lowercase variables as part of the Artifactory BDD path below

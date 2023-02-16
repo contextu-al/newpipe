@@ -56,6 +56,7 @@ android {
                 resValue "string", "app_name", "NewPipe " + workingBranch
                 archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
             }
+            resValue "string", "app_key", "NewPipe"
         }
 
         // Keep the release build type at the end of the list to override 'archivesBaseName' of
@@ -66,6 +67,10 @@ android {
             shrinkResources false // disabled to fix F-Droid's reproducible build
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             archivesBaseName = 'app'
+            resValue "string", "app_key", "NewPipe"
+        }
+        staging {
+            resValue "string", "app_key", "NewPipe_staging"
         }
     }
 
@@ -269,7 +274,9 @@ dependencies {
     // RxJava binding APIs for Android UI widgets
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
 
-    implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
+    debugImplementation project(":contextual")
+
+    releaseImplementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
 
     // Date and time formatting
     implementation "org.ocpsoft.prettytime:prettytime:5.0.1.Final"

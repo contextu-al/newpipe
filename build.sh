@@ -35,7 +35,7 @@ if [ "$GIT_BRANCH" = "staging" ]; then
   ./gradlew assembleStagingDebug
   APK_LOCATION=app/build/outputs/apk/staging/debug/app-staging-debug.apk
 # Production
-elif [ "$GIT_BRANCH" = "main" ]; then
+elif [ "$GIT_BRANCH" = "main" ] || [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Prod'
   ./gradlew assembleProdDebug
   APK_LOCATION=app/build/outputs/apk/release/debug/app-release-debug.apk

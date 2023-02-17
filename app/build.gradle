@@ -292,6 +292,8 @@ dependencies {
 
     if(getCurrentFlavor().toLowerCase().contains("debug")){
         implementation project(":contextual")
+    } else if(getCurrentFlavor().toLowerCase().contains("release")){
+        implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
     } else {
         implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
     }

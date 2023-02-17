@@ -21,25 +21,27 @@ SDK_ENV="Dev"
 
 GIT_VERSION=$(git log -1 --format="%h")
 BUILD_TIME=$(date)
+./gradlew build --refresh-dependencies
+./gradlew app:dependencies
 
 # Default is Develop using above environment variables
 # Staging
 if [ "$GIT_BRANCH" = "staging" ]; then 
   APP_ENV="Staging"
   APP_KEY="NewPipe_staging"
+  echo "===== Build NewPipe .apk for AppCenter ====="
+  ./gradlew assembleStaging
 # Production
 elif [ "$GIT_BRANCH" = "main" ]; then
   SDK_ENV='Prod'
+  echo "===== Build NewPipe .apk for AppCenter ====="
+  ./gradlew assembleRelease
 fi
 
 # We use lowercase variables as part of the Artifactory BDD path below
 LOWERCASE_APP_ENV=$( tr '[A-Z]' '[a-z]' <<< $APP_ENV)
 LOWERCASE_SDK_ENV=$( tr '[A-Z]' '[a-z]' <<< $SDK_ENV)
 
-echo "===== Build NewPipe .apk for AppCenter ====="
-./gradlew build --refresh-dependencies
-./gradlew app:dependencies
-./gradlew assembleRelease
 
 echo "===== Uploading .apk to AppCenter ====="
 appcenter distribute release --app Contextual/NewPipe-"$SDK_ENV"SDK-"$APP_ENV"-"$APP_KEY" --file "app/build/outputs/apk/release/app-release.apk" --group "Collaborators"

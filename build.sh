@@ -2,6 +2,7 @@
 
 echo "===== Ensuring correct language encoding and paths on build machine ====="
 source ~/.profile
+java --version
 
 echo "===== Cleanup before fresh build ====="
 rm -rf .app/build/outputs

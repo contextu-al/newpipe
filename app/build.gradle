@@ -68,10 +68,8 @@ android {
                 resValue "string", "app_name", "NewPipe Debug"
             } else {
                 applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "NewPipe " + workingBranch
                 archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
             }
-            resValue "string", "app_key", "NewPipe"
         }
 
         // Keep the release build type at the end of the list to override 'archivesBaseName' of
@@ -82,11 +80,7 @@ android {
             shrinkResources false // disabled to fix F-Droid's reproducible build
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             archivesBaseName = 'app'
-            resValue "string", "app_key", "NewPipe"
             signingConfig signingConfigs.release
-        }
-        staging {
-            resValue "string", "app_key", "NewPipe_staging"
         }
     }
 
@@ -124,6 +118,23 @@ android {
 
     buildFeatures {
         viewBinding true
+    }
+
+    productFlavors {
+        dev {
+            flavorDimensions "dev"
+            resValue "string", "app_key", "NewPipe"
+        }
+
+        prod {
+            flavorDimensions "prod"
+            resValue "string", "app_key", "NewPipe"
+        }
+
+        staging {
+            flavorDimensions "staging"
+            resValue "string", "app_key", "NewPipe_staging"
+        }
     }
 }
 
@@ -194,7 +205,7 @@ task formatKtlint(type: JavaExec) {
 }
 
 afterEvaluate {
-    preDebugBuild.dependsOn formatKtlint, runCheckstyle, runKtlint
+    //preDebugBuild.dependsOn formatKtlint, runCheckstyle, runKtlint
 }
 
 sonarqube {

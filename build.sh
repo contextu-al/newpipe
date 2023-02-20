@@ -1,8 +1,7 @@
-#!/bin/sh -x
+#!/bin/sh
 
 echo "===== Ensuring correct language encoding and paths on build machine ====="
 source ~/.profile
-java --version
 
 echo "===== Cleanup before fresh build ====="
 rm -rf .app/build/outputs
@@ -24,7 +23,7 @@ BUILD_TIME=$(date)
 APK_LOCATION=""
 
 ./gradlew build --refresh-dependencies
-./gradlew app:dependencies
+#./gradlew app:dependencies
 
 # Default is Develop using above environment variables
 # Staging
@@ -41,6 +40,7 @@ elif [ "$GIT_BRANCH" = "main" ]; then
   APK_LOCATION=app/build/outputs/apk/prod/debug/app-prod-debug.apk
 elif [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Dev'
+  echo "building develop now"
   ./gradlew assembleDev
   APK_LOCATION=app/build/outputs/apk/dev/NewPipe_develop-dev.apk
 fi

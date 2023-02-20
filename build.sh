@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 echo "===== Ensuring correct language encoding and paths on build machine ====="
 source ~/.profile
@@ -23,7 +23,7 @@ BUILD_TIME=$(date)
 APK_LOCATION=""
 
 ./gradlew build --refresh-dependencies
-#./gradlew app:dependencies
+./gradlew app:dependencies
 
 # Default is Develop using above environment variables
 # Staging
@@ -40,10 +40,8 @@ elif [ "$GIT_BRANCH" = "main" ]; then
   APK_LOCATION=app/build/outputs/apk/prod/debug/app-prod-debug.apk
 elif [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Dev'
-  ls app/build/outputs/apk
-  ls app/build/outputs/apk/dev
   ./gradlew assembleDev
-  APK_LOCATION=app/build/outputs/apk/dev/NewPipe_develop-dev.apk
+  APK_LOCATION=app/build/outputs/apk/dev/NewPipe_HEAD-dev.apk
 fi
 
 # We use lowercase variables as part of the Artifactory BDD path below

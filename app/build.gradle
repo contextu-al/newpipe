@@ -67,6 +67,25 @@ android {
 //            signingConfig signingConfigs.release
 //        }
 
+        localDev {
+            flavorDimensions "dev"
+            resValue "string", "app_key", "NewPipe"
+            // fallback to prod SDK if not found. mainly for CI.
+            matchingFallbacks = ['prod']
+            debuggable true
+
+            // suffix the app id and the app name with git branch name
+            def workingBranch = getGitWorkingBranch()
+            def normalizedWorkingBranch = workingBranch.replaceFirst("^[^A-Za-z]+", "").replaceAll("[^0-9A-Za-z]+", "")
+            if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev") {
+                // default values when branch name could not be determined or is master or dev
+                applicationIdSuffix ".debug"
+            } else {
+                applicationIdSuffix ".debug." + normalizedWorkingBranch
+                archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
+            }
+        }
+
         dev {
             flavorDimensions "dev"
             resValue "string", "app_key", "NewPipe"
@@ -299,7 +318,7 @@ dependencies {
     // RxJava binding APIs for Android UI widgets
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
 
-    if(getCurrentFlavor().contains("dev")){
+    if(getCurrentFlavor().contentEquals("localDev")){
         implementation project(":contextual")
     } else if(getCurrentFlavor().contains("release")){
         implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
@@ -347,11 +366,12 @@ static String getGitWorkingBranch() {
 def getCurrentFlavor() {
     Gradle gradle = getGradle()
     String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
-    println("tsk ::  "  + tskReqStr)
     if (tskReqStr.contains("prod")) {
         return "prod"
-    } else if (tskReqStr.contains("dev")) {
+    } else if (tskReqStr.contentEquals("dev")) {
         return "dev"
+    } else if(tskReqStr.contentEquals("localDev")) {
+        return "localDev"
     } else {
         return "staging"
     }

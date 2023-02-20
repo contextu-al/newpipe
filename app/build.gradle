@@ -158,6 +158,9 @@ ext {
 configurations {
     checkstyle
     ktlint
+    devDebugImplementation
+    prodDebugImplementation
+    stagingDebugImplementation
 }
 
 checkstyle {
@@ -301,14 +304,9 @@ dependencies {
     // RxJava binding APIs for Android UI widgets
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
 
-    if(getCurrentFlavor().toLowerCase().contains("debug")){
-        implementation project(":contextual")
-    } else if(getCurrentFlavor().toLowerCase().contains("release")){
-        implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
-    } else {
-        implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
-    }
-
+    devDebugImplementation project(":contextual")
+    prodDebugImplementation (group: "com.pointzi", name: "pointzi", version: "2.+")
+    stagingDebugImplementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
 
     // Date and time formatting
     implementation "org.ocpsoft.prettytime:prettytime:5.0.1.Final"
@@ -342,19 +340,5 @@ static String getGitWorkingBranch() {
     } catch (IOException ignored) {
         // git was not found
         return ""
-    }
-}
-
-// https://stackoverflow.com/questions/30621183/how-to-get-current-flavor-in-gradle
-def getCurrentFlavor() {
-    Gradle gradle = getGradle()
-    String tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
-
-    if( tskReqStr.contains( "prod" ) ){
-        return "prod"
-    } else if( tskReqStr.contains("dev") ){
-        return "dev"
-    } else {
-        return "staging"
     }
 }

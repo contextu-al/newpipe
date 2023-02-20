@@ -41,6 +41,7 @@ elif [ "$GIT_BRANCH" = "main" ]; then
 elif [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Dev'
   ls app/build/outputs/apk
+  ls app/build/outputs/apk/dev
   ./gradlew assembleDev
   APK_LOCATION=app/build/outputs/apk/dev/NewPipe_develop-dev.apk
 fi

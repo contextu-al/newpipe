@@ -32,16 +32,16 @@ echo "===== Build NewPipe .apk for AppCenter ====="
 if [ "$GIT_BRANCH" = "staging" ]; then 
   APP_ENV="Staging"
   APP_KEY="NewPipe_staging"
-  ./gradlew assembleStagingDebug
+  ./gradlew assembleStaging
   APK_LOCATION=app/build/outputs/apk/staging/debug/app-staging-debug.apk
 # Production
 elif [ "$GIT_BRANCH" = "main" ]; then
   SDK_ENV='Prod'
-  ./gradlew assembleProdDebug
+  ./gradlew assembleProd
   APK_LOCATION=app/build/outputs/apk/prod/debug/app-prod-debug.apk
 elif [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Dev'
-  ./gradlew assembleDevDebug
+  ./gradlew assembleDev
   APK_LOCATION=app/build/outputs/apk/dev/debug/app-dev-debug.apk
 fi
 

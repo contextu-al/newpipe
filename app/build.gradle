@@ -329,7 +329,7 @@ dependencies {
     } else if(getCurrentFlavor().contains("release")){
         implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
     } else {
-        implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.+")
+        implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.5.43")
     }
 
 

@@ -38,7 +38,7 @@ if [ "$GIT_BRANCH" = "staging" ]; then
 elif [ "$GIT_BRANCH" = "main" ] || [ "$GIT_BRANCH" = "develop" ]; then
   SDK_ENV='Prod'
   ./gradlew assembleProdDebug
-  APK_LOCATION=app/build/outputs/apk/release/debug/app-release-debug.apk
+  APK_LOCATION=app/build/outputs/apk/prod/debug/app-prod-debug.apk
 fi
 
 # We use lowercase variables as part of the Artifactory BDD path below

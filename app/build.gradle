@@ -329,7 +329,11 @@ dependencies {
     } else if(getCurrentFlavor().contains("release")){
         implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
     } else {
-        implementation (group: "com.pointzi.dev", name: "pointzi", version: "2.5.43")
+        // Used for CI to get specific version
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('sdk.properties').newDataInputStream())
+        def sdkVersion = properties.getProperty('VERSION_CODE')
+        implementation (group: "com.pointzi.dev", name: "pointzi", version: sdkVersion)
     }
 
 

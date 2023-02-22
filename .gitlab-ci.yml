@@ -15,6 +15,3 @@ dev:build:
     - sh -x build.sh
   tags:
     - android
-  dependencies:
-    - dev:build
-

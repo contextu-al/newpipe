@@ -77,7 +77,7 @@ android {
             flavorDimensions "dev"
             resValue "string", "app_key", "NewPipe"
             // fallback to prod SDK if not found. mainly for CI.
-            matchingFallbacks = ['prod']
+            matchingFallbacks = ['debug']
             debuggable true
 
             // suffix the app id and the app name with git branch name
@@ -96,7 +96,7 @@ android {
             flavorDimensions "dev"
             resValue "string", "app_key", "NewPipe"
             // fallback to prod SDK if not found. mainly for CI.
-            matchingFallbacks = ['prod']
+            matchingFallbacks = ['debug']
             debuggable true
             signingConfig signingConfigs.dev
             // suffix the app id and the app name with git branch name
@@ -115,11 +115,13 @@ android {
         prod {
             flavorDimensions "prod"
             resValue "string", "app_key", "NewPipe"
+            matchingFallbacks = ['release']
         }
 
         staging {
             flavorDimensions "staging"
             resValue "string", "app_key", "NewPipe_staging"
+            matchingFallbacks = ['release']
         }
     }
 
@@ -323,8 +325,7 @@ dependencies {
     implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
     // RxJava binding APIs for Android UI widgets
     implementation "com.jakewharton.rxbinding4:rxbinding:4.0.0"
-
-    if(getCurrentFlavor().contentEquals("localDev")){
+   /* if(getCurrentFlavor().contentEquals("localDev")){
         implementation project(":contextual")
     } else if(getCurrentFlavor().contains("release")){
         implementation (group: "com.pointzi", name: "pointzi", version: "2.+")
@@ -333,8 +334,11 @@ dependencies {
         Properties properties = new Properties()
         properties.load(project.rootProject.file('sdk.properties').newDataInputStream())
         def sdkVersion = properties.getProperty('VERSION_CODE')
+        def sdkType = properties.getProperty('')
         implementation (group: "com.pointzi.dev", name: "pointzi", version: sdkVersion)
-    }
+    }*/
+
+    implementation project(":contextual")
 
 
     // Date and time formatting

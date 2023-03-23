@@ -41,7 +41,9 @@ SDK_ENV="Dev"
 GIT_VERSION=$(git log -1 --format="%h")
 BUILD_TIME=$(date)
 APK_LOCATION=""
-
+if [ ! -f local.properties ]; then
+  touch local.properties
+fi
 # Default is Develop using above environment variables
 # Staging
 echo "===== Build NewPipe .apk for AppCenter ====="

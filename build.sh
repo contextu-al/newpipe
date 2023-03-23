@@ -41,16 +41,13 @@ GIT_VERSION=$(git log -1 --format="%h")
 BUILD_TIME=$(date)
 APK_LOCATION=""
 
-./gradlew build --refresh-dependencies
-./gradlew app:dependencies
-
 # Default is Develop using above environment variables
 # Staging
 echo "===== Build NewPipe .apk for AppCenter ====="
-if [ "$GIT_BRANCH" = "staging" ]; then 
+  if [ "$GIT_BRANCH" = "staging" ]; then
   APP_ENV="Staging"
   APP_KEY="NewPipe_staging"
-  ./gradlew assembleStaging
+  ./gradlew assembleStagingDebug
   APK_LOCATION=app/build/outputs/apk/staging/debug/app-staging-debug.apk
 # Production
 elif [ "$GIT_BRANCH" = "main" ]; then

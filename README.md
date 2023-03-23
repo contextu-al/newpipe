@@ -115,6 +115,20 @@ To run this application on your device, simply run
 The `app_key` for this app is `Newpipe`, it can be found in `app/build.gradle`. You may have to change the `app_key` to your
 account's `app_key` for the application to work.
 
+
+## Screenshots
+
+The following screenshots shows what our SDK can do using the dashboard and live device side by side
+
+Example of PopupModal 
+![PopupModal](screenshots/PopupModal.png)
+
+
+Example of NPS Survey 
+![NPSSurvey](screenshots/NPSSurvey.png)
+
+
+
 ## Contribution
 Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome.
 The more is done the better it gets!

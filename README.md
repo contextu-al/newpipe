@@ -101,6 +101,20 @@ In the meanwhile, if you want to switch sources for some reason (e.g. NewPipe's 
 3. Download the APK from the new source and install it
 4. Import the data from step 1 via Settings > Content > Import Database
 
+### Contextual Integration
+This project is maintained by Contextual and its demonstration how easily you can use Contextual in your application
+
+Contextual Integration can be done by following the documentation [here](https://dashboard.contextu.al/docs/sdks/android/integration/)
+
+To run this application on your device, simply run
+
+```
+./gradlew installProdDebug
+```
+
+The `app_key` for this app is `Newpipe`, it can be found in `app/build.gradle`. You may have to change the `app_key` to your
+account's `app_key` for the application to work.
+
 ## Contribution
 Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome.
 The more is done the better it gets!

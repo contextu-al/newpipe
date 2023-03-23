@@ -1,21 +1,21 @@
 #!/bin/sh
 
-# Invoked without variable
-if [ "$CONTEXTUAL_SDK_VERSION" = '' ]; then
-    echo "VERSION_NAME=2.+" >> local.properties
-    echo "SDK Version not specified. Building 2.+ of SDK"
-elif [ -z "$CONTEXTUAL_SDK_VERSION" ]; then
-    echo "VERSION_NAME=${CONTEXTUAL_SDK_VERSION}" >> local.properties
+# If user has set CONTEXTUAL_SDK_VERSION in environment, it will be used.
+# If user did not set the variable, the default will be used, 2.+
+if [ "$CONTEXTUAL_SDK_VERSION" ]; then
+    echo "VERSION_NAME=${CONTEXTUAL_SDK_VERSION}:2.+" >> local.properties
     echo "Building ${CONTEXTUAL_SDK_VERSION} of SDK"
 fi
 
+
+# Invoked from upstream SDK pipeline.
 if [ ! -f local.properties ]; then
-   # Invoked from upstream SDK.
    git clone https://gitlab.com/contextual/sdks/android/contextual-sdk-android
    cd contextual-sdk-android
    git checkout $UPSTREAM_VERSION_NAME
    CONTEXTUAL_SDK_TAG=$(git describe --tags --abbrev=0)
-   UPSTREAM_VERSION=${CONTEXTUAL_SDK_TAG}-${UPSTREAM_VERSION_NAME}
+   UPSTREAM_VERSION_GIT_HASH=-${UPSTREAM_VERSION_NAME}
+   UPSTREAM_VERSION=${CONTEXTUAL_SDK_TAG}${UPSTREAM_VERSION_GIT_HASH}
    cd ..
    echo "VERSION_NAME=${UPSTREAM_VERSION}" >> local.properties
    echo "Building ${UPSTREAM_VERSION} of SDK"

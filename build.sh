@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Invoked without variable
-if [ $CONTEXTUAL_SDK_VERSION ]; then
+if [ "$CONTEXTUAL_SDK_VERSION" = '' ]; then
     echo "VERSION_NAME=2.+" >> local.properties
     echo "SDK Version not specified. Building 2.+ of SDK"
 elif [ -z "$CONTEXTUAL_SDK_VERSION" ]; then

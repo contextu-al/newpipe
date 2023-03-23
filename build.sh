@@ -1,9 +1,8 @@
 #!/bin/sh
 
 # If user has set CONTEXTUAL_SDK_VERSION in environment, it will be used.
-# If user did not set the variable, the default will be used, 2.+
 if [ "$CONTEXTUAL_SDK_VERSION" ]; then
-    echo "VERSION_NAME=${CONTEXTUAL_SDK_VERSION}:2.+" >> local.properties
+    echo "VERSION_NAME=${CONTEXTUAL_SDK_VERSION}" >> local.properties
     echo "Building ${CONTEXTUAL_SDK_VERSION} of SDK"
 fi
 

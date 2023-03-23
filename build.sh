@@ -8,7 +8,7 @@ fi
 
 
 # Invoked from upstream SDK pipeline.
-if [ ! -f local.properties ]; then
+if [ "$UPSTREAM_VERSION_NAME" ]; then
    git clone https://gitlab.com/contextual/sdks/android/contextual-sdk-android
    cd contextual-sdk-android
    git checkout $UPSTREAM_VERSION_NAME

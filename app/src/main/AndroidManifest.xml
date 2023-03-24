@@ -31,7 +31,7 @@
 
         <meta-data
             android:name="com.pointzi.APP_KEY"
-            android:value="NewPipe"/>
+            android:value="${app_key}"/>
 
         <activity
             android:name=".MainActivity"

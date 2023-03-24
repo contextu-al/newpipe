@@ -1,3 +1,10 @@
+# Contextual
+
+https://contextu.al/
+
+![Main View](https://contextu.al/wp-content/uploads/2022/01/Contextual-icon-560x285.png)
+[![Twitter](https://img.shields.io/badge/Twitter-%40contextu_al-blue.svg)](https://twitter.com/contextu_al)
+
 <p align="center"><a href="https://newpipe.net"><img src="assets/new_pipe_icon_5.png" width="150"></a></p> 
 <h2 align="center"><b>NewPipe</b></h2>
 <h4 align="center">A libre lightweight streaming frontend for Android.</h4>
@@ -100,6 +107,34 @@ In the meanwhile, if you want to switch sources for some reason (e.g. NewPipe's 
 2. Uninstall NewPipe
 3. Download the APK from the new source and install it
 4. Import the data from step 1 via Settings > Content > Import Database
+
+### Contextual Integration
+This project is maintained by Contextual and its demonstration how easily you can use Contextual in your application
+
+Contextual Integration can be done by following the documentation [here](https://dashboard.contextu.al/docs/sdks/android/integration/)
+
+To run this application on your device, simply run
+
+```
+./gradlew installProdDebug
+```
+
+The `app_key` for this app is `Newpipe`, it can be found in `app/build.gradle`. You may have to change the `app_key` to your
+account's `app_key` for the application to work.
+
+
+## Screenshots
+
+The following screenshots shows what our SDK can do using the dashboard and live device side by side
+
+Example of PopupModal 
+![PopupModal](screenshots/PopupModal.png)
+
+
+Example of NPS Survey 
+![NPSSurvey](screenshots/NPSSurvey.png)
+
+
 
 ## Contribution
 Whether you have ideas, translations, design changes, code cleaning, or real heavy code changes, help is always welcome.

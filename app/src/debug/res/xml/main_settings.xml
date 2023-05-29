@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="general_preferences"
     android:title="@string/settings">
-
     <PreferenceScreen
         android:fragment="org.schabi.newpipe.settings.VideoAudioSettingsFragment"
         android:icon="@drawable/ic_headset"
@@ -124,4 +123,706 @@
         android:icon="@drawable/ic_palette"
         android:title="@string/settings_category_appearance_title"
         app:iconSpaceReserved="false" />
+
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+    <PreferenceScreen
+        android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
+        android:icon="@drawable/ic_palette"
+        android:title="@string/settings_category_appearance_title"
+        app:iconSpaceReserved="false" />
+
+
+
+
 </PreferenceScreen>

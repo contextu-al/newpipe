@@ -52,10 +52,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "uid"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -65,7 +65,8 @@
               "service_id",
               "url"
             ],
-            "createSql": "CREATE UNIQUE INDEX `index_subscriptions_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_subscriptions_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
           }
         ],
         "foreignKeys": []
@@ -100,10 +101,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "id"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -112,7 +113,8 @@
             "columnNames": [
               "search"
             ],
-            "createSql": "CREATE  INDEX `index_search_history_search` ON `${TABLE_NAME}` (`search`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_search_history_search` ON `${TABLE_NAME}` (`search`)"
           }
         ],
         "foreignKeys": []
@@ -195,10 +197,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "uid"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -208,7 +210,8 @@
               "service_id",
               "url"
             ],
-            "createSql": "CREATE UNIQUE INDEX `index_streams_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_streams_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
           }
         ],
         "foreignKeys": []
@@ -237,11 +240,11 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "stream_id",
             "access_date"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [
           {
@@ -250,7 +253,8 @@
             "columnNames": [
               "stream_id"
             ],
-            "createSql": "CREATE  INDEX `index_stream_history_stream_id` ON `${TABLE_NAME}` (`stream_id`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_stream_history_stream_id` ON `${TABLE_NAME}` (`stream_id`)"
           }
         ],
         "foreignKeys": [
@@ -278,17 +282,17 @@
             "notNull": true
           },
           {
-            "fieldPath": "progressTime",
+            "fieldPath": "progressMillis",
             "columnName": "progress_time",
             "affinity": "INTEGER",
             "notNull": true
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "stream_id"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [],
         "foreignKeys": [
@@ -329,10 +333,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "uid"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -341,7 +345,8 @@
             "columnNames": [
               "name"
             ],
-            "createSql": "CREATE  INDEX `index_playlists_name` ON `${TABLE_NAME}` (`name`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_playlists_name` ON `${TABLE_NAME}` (`name`)"
           }
         ],
         "foreignKeys": []
@@ -370,11 +375,11 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "playlist_id",
             "join_index"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [
           {
@@ -384,7 +389,8 @@
               "playlist_id",
               "join_index"
             ],
-            "createSql": "CREATE UNIQUE INDEX `index_playlist_stream_join_playlist_id_join_index` ON `${TABLE_NAME}` (`playlist_id`, `join_index`)"
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_playlist_stream_join_playlist_id_join_index` ON `${TABLE_NAME}` (`playlist_id`, `join_index`)"
           },
           {
             "name": "index_playlist_stream_join_stream_id",
@@ -392,7 +398,8 @@
             "columnNames": [
               "stream_id"
             ],
-            "createSql": "CREATE  INDEX `index_playlist_stream_join_stream_id` ON `${TABLE_NAME}` (`stream_id`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_playlist_stream_join_stream_id` ON `${TABLE_NAME}` (`stream_id`)"
           }
         ],
         "foreignKeys": [
@@ -468,10 +475,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "uid"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -480,7 +487,8 @@
             "columnNames": [
               "name"
             ],
-            "createSql": "CREATE  INDEX `index_remote_playlists_name` ON `${TABLE_NAME}` (`name`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_remote_playlists_name` ON `${TABLE_NAME}` (`name`)"
           },
           {
             "name": "index_remote_playlists_service_id_url",
@@ -489,7 +497,8 @@
               "service_id",
               "url"
             ],
-            "createSql": "CREATE UNIQUE INDEX `index_remote_playlists_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_remote_playlists_service_id_url` ON `${TABLE_NAME}` (`service_id`, `url`)"
           }
         ],
         "foreignKeys": []
@@ -512,11 +521,11 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "stream_id",
             "subscription_id"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [
           {
@@ -525,7 +534,8 @@
             "columnNames": [
               "subscription_id"
             ],
-            "createSql": "CREATE  INDEX `index_feed_subscription_id` ON `${TABLE_NAME}` (`subscription_id`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_feed_subscription_id` ON `${TABLE_NAME}` (`subscription_id`)"
           }
         ],
         "foreignKeys": [
@@ -583,10 +593,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": true,
           "columnNames": [
             "uid"
-          ],
-          "autoGenerate": true
+          ]
         },
         "indices": [
           {
@@ -595,7 +605,8 @@
             "columnNames": [
               "sort_order"
             ],
-            "createSql": "CREATE  INDEX `index_feed_group_sort_order` ON `${TABLE_NAME}` (`sort_order`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_feed_group_sort_order` ON `${TABLE_NAME}` (`sort_order`)"
           }
         ],
         "foreignKeys": []
@@ -618,11 +629,11 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "group_id",
             "subscription_id"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [
           {
@@ -631,7 +642,8 @@
             "columnNames": [
               "subscription_id"
             ],
-            "createSql": "CREATE  INDEX `index_feed_group_subscription_join_subscription_id` ON `${TABLE_NAME}` (`subscription_id`)"
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_feed_group_subscription_join_subscription_id` ON `${TABLE_NAME}` (`subscription_id`)"
           }
         ],
         "foreignKeys": [
@@ -677,10 +689,10 @@
           }
         ],
         "primaryKey": {
+          "autoGenerate": false,
           "columnNames": [
             "subscription_id"
-          ],
-          "autoGenerate": false
+          ]
         },
         "indices": [],
         "foreignKeys": [

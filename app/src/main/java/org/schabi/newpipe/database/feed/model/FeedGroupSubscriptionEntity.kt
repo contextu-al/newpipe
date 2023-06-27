@@ -3,7 +3,7 @@ package org.schabi.newpipe.database.feed.model
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
-import androidx.room.ForeignKey.CASCADE
+import androidx.room.ForeignKey.Companion.CASCADE
 import androidx.room.Index
 import org.schabi.newpipe.database.feed.model.FeedGroupSubscriptionEntity.Companion.FEED_GROUP_SUBSCRIPTION_TABLE
 import org.schabi.newpipe.database.feed.model.FeedGroupSubscriptionEntity.Companion.GROUP_ID

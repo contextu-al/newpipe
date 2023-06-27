@@ -1,23 +1,20 @@
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
 plugins {
     id "org.sonarqube" version "3.1.1"
+    id "com.android.application"
+    id "kotlin-android"
+    id "kotlin-kapt"
+    id "kotlin-parcelize"
+    id "checkstyle"
 }
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'checkstyle'
 
 android {
     compileSdkVersion 33
     buildToolsVersion '30.0.3'
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -42,7 +39,7 @@ android {
     defaultConfig {
         applicationId "org.schabi.newpipe"
         resValue "string", "app_name", "NewPipe"
-        minSdkVersion 21
+        minSdkVersion 24
         targetSdkVersion 31
         versionCode 975
         versionName "0.21.9"
@@ -90,16 +87,6 @@ android {
 
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-        encoding 'utf-8'
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-
-    // Required and used only by groupie
-    androidExtensions {
-        experimental = true
     }
 
     sourceSets {
@@ -136,7 +123,7 @@ ext {
     checkstyleVersion = '8.38'
 
     androidxLifecycleVersion = '2.3.1'
-    androidxRoomVersion = '2.4.0'
+    androidxRoomVersion = '2.5.1'
 
     icepickVersion = '3.2.0'
     exoPlayerVersion = '2.12.3'
@@ -160,6 +147,11 @@ checkstyle {
     showViolations true
     toolVersion = checkstyleVersion
 }
+
+kapt {
+    correctErrorTypes true
+}
+
 
 task runCheckstyle(type: Checkstyle) {
     source 'src'

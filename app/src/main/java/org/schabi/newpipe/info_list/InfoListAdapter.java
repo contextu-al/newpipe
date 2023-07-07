@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pointzi.Pointzi;
+import com.contextu.al.Contextual;
 
 import org.schabi.newpipe.database.stream.model.StreamStateEntity;
 import org.schabi.newpipe.extractor.InfoItem;
@@ -135,12 +135,13 @@ public class InfoListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                     + "showFooter = " + showFooter);
         }
         notifyItemRangeInserted(offsetStart, data.size());
-        Pointzi.resetUi();
+      //  Pointzi.resetUi();
 
         if (footer != null && showFooter) {
             final int footerNow = sizeConsideringHeaderOffset();
             notifyItemMoved(offsetStart, footerNow);
-            Pointzi.resetUi();
+           // TODO: 7 July 2023 Do we need resetUi as part of public API for sdk 3?
+           // Pointzi.resetUi();
             if (DEBUG) {
                 Log.d(TAG, "addInfoItemList() footer from " + offsetStart
                         + " to " + footerNow);

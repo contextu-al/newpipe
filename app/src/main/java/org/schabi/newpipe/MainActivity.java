@@ -54,9 +54,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.PreferenceManager;
 
+import com.contextu.al.Contextual;
+import com.contextu.al.debug.LogLevel;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.pointzi.Pointzi;
-import com.pointzi.debug.LogLevel;
 
 import org.schabi.newpipe.databinding.ActivityMainBinding;
 import org.schabi.newpipe.databinding.DrawerHeaderBinding;
@@ -136,15 +136,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        Pointzi.setLogLevel(LogLevel.DEBUG);
+        Contextual.setLogLevel(LogLevel.DEBUG);
 
         final String pattern = "dd-MMM-yyyy hh:mm:ss";
         @SuppressLint("SimpleDateFormat") final SimpleDateFormat simpleDateFormat =
                 new SimpleDateFormat(pattern);
         final String date = simpleDateFormat.format(new Date());
 
-
-        Pointzi.setUserId("pz-dev-test-bison " + date);
+        Contextual.setUserId("pz-dev-test-bison " + date);
 
         // enable TLS1.1/1.2 for kitkat devices, to fix download and play for media.ccc.de sources
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {

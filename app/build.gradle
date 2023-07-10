@@ -290,20 +290,19 @@ dependencies {
     println("Current flavor selected: " + getCurrentFlavor())
     println("SDK Version: " + getContextualSdkVersion())
     if(getCurrentFlavor().contentEquals("localDev")){
-        implementation project(":contextual"){
+        implementation project(":contextual"), {
             exclude group: 'androidx.room'
         }
     } else if(getCurrentFlavor().contentEquals("prod")){
-        implementation (group: "com.pointzi", name: "pointzi", version: getContextualSdkVersion()){
+        implementation (group: "com.contextu.al", name: "contextual", version: getContextualSdkVersion()){
             exclude group: 'androidx.room'
         }
     } else {
         // This is used by CI(dev and staging)
-        implementation (group: "com.pointzi.dev", name: "pointzi", version: getContextualSdkVersion()){
+        implementation (group: "com.contextu.al.dev", name: "contextual", version: getContextualSdkVersion()){
             exclude group: 'androidx.room'
         }
     }
-
 
 
     // Date and time formatting

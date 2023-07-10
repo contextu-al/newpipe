@@ -17,6 +17,6 @@ dependencyResolutionManagement {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url "https://clojars.org/repo" }
-        maven { url "https://repo.pointzi.com/sdk/pointzi/" }
+        maven { url "https://repo.contextu.al/sdk/contextual/" }
     }
 }
